@@ -18,7 +18,7 @@ public class RoomCode {
     }
 
     public RoomCode(String s) {
-        if(s.length() < 4)
+        if(s.length() != 4)
             throw new IllegalArgumentException("Constructed room code does not have 4 characters!");
 
         s = s.toUpperCase();
@@ -26,6 +26,11 @@ public class RoomCode {
         for(int i=0; i<4; i++) {
             code[i] = s.charAt(i);
         }
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(code);
     }
 
     @Override

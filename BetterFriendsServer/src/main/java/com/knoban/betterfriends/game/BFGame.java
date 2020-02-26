@@ -14,6 +14,8 @@ public class BFGame {
     public BFGame(BFServer server, BFPlayer host) {
         this.server = server;
         this.host = host;
+        host.game = this;
+        host.host = true;
 
         // Obviously not the best way to do this, but I doubt this game will be popular enough to matter
         RoomCode roomCode;
@@ -33,10 +35,16 @@ public class BFGame {
 
     public void joinPlayer(BFPlayer player) {
         players.put(player.getName(), player);
+        player.game = this;
     }
 
     public void quitPlayer(BFPlayer player) {
         players.remove(player.getName());
+        player.game = null;
+    }
+
+    public RoomCode getRoomCode() {
+        return roomCode;
     }
 
     @Override

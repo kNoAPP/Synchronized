@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b14c8e11-9d5a-4f92-b0df-97d6ea816f45" name="Default Changelist" comment="" />
+    <list default="true" id="b14c8e11-9d5a-4f92-b0df-97d6ea816f45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/JoinGameRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/UpdateNameRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/BetterFriendsServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BetterFriendsServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/RoomCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/RoomCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/RequestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/RequestCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/UserIdFulfillment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_create_connection/client_create_connection.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_create_connection/client_create_connection.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_packet/client_handle_packet.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_packet/client_handle_packet.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_response/client_handle_response.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_response/client_handle_response.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_prepare_buffer/client_prepare_buffer.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_prepare_buffer/client_prepare_buffer.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_send_request/client_send_request.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_send_request/client_send_request.gml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1YB2Ugj17gQgliXKkZ0WQJ5LBfq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,8 +47,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -29,7 +63,37 @@
       <option name="presentableId" value="Default" />
       <updated>1582401683460</updated>
       <workItem from="1582401686959" duration="5000" />
+      <workItem from="1582733170372" duration="5999000" />
+      <workItem from="1582750186967" duration="3095000" />
+      <workItem from="1582755374107" duration="866000" />
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="487" y="194" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582750208431">
+      <screen x="0" y="0" width="1368" height="912" />
+    </state>
+    <state x="487" y="194" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1368.912@0.0.1368.912" timestamp="1582750208431" />
+    <state x="683" y="230" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582733211574" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1582756308219">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582756308219" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1582756308219">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582756308219" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1582756308218">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582756308218" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1582756308219">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582756308219" />
+    <state x="-1264" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1582755374745">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1264" y="425" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582755374745" />
   </component>
 </project>

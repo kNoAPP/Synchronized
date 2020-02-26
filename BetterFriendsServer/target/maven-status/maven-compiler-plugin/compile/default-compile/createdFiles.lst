@@ -5,7 +5,8 @@ com\knoban\betterfriends\requests\RequestCode.class
 com\knoban\betterfriends\game\BFGame.class
 com\knoban\betterfriends\requests\RequestFulfillment.class
 com\knoban\betterfriends\utils\Tools.class
-com\knoban\betterfriends\requests\UserIdFulfillment.class
+com\knoban\betterfriends\requests\JoinGameRequest.class
 com\knoban\betterfriends\game\BFPlayer.class
 com\knoban\betterfriends\streams\GMLOutputStream.class
 com\knoban\betterfriends\Main.class
+com\knoban\betterfriends\requests\UpdateNameRequest.class
