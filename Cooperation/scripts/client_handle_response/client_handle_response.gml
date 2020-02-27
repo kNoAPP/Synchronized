@@ -12,6 +12,18 @@ switch(msg_id) {
 		}
 		return false;
 		
+	case MSG_UPDATE_NAME:
+		return true;
+		
+	case MSG_CREATE_GAME:
+		obj_game.room_code = buffer_read(buffer, buffer_string);
+		obj_game.host = true;
+		show_debug_message("Got Room Code: " + string(obj_game.room_code));
+		return true;
+		
+	case MSG_JOIN_GAME:
+		return true;
+		
 	default:
         show_debug_message("Received Unknown Request ID");
         return false;

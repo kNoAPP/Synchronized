@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "1980e07e-567a-484e-9fe7-cba6e92139bf",
+            "Value": {
+                "id": "aa699ec1-2c84-4016-9677-3ae3f229bed5",
+                "resourcePath": "sprites\\spr_background\\spr_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1da5c759-2ab8-4ed3-9afd-b3420e31bf8e",
             "Value": {
                 "id": "66867c68-f8f2-477d-97b0-e0b886f3ea5c",
@@ -188,6 +196,14 @@
                 "id": "2db2c04e-42ca-489d-9014-2f95dd708eb0",
                 "resourcePath": "sprites\\spr_host_button\\spr_host_button.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "91bb1265-63e3-412c-b120-961e598871b9",
+            "Value": {
+                "id": "52031397-5363-4559-b14a-c91ba9a28501",
+                "resourcePath": "fonts\\fnt_large\\fnt_large.yy",
+                "resourceType": "GMFont"
             }
         },
         {

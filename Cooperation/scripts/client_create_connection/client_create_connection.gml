@@ -1,6 +1,9 @@
 // DEFINE MESSAGE IDs
 MSG_HANDSHAKE = 420;
 MSG_USER_ID = 1;
+MSG_UPDATE_NAME = 2;
+MSG_CREATE_GAME = 3;
+MSG_JOIN_GAME = 4;
 
 // Increase or decrease depending on your expected packet rate and handling speed.
 // I've found that this buffer size can handle about 40,000 bytes of information per
