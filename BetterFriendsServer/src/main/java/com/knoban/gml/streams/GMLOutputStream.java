@@ -1,4 +1,4 @@
-package com.knoban.betterfriends.streams;
+package com.knoban.gml.streams;
 
 import java.io.*;
 import java.nio.ByteBuffer;

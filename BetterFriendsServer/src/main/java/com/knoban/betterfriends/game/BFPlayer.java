@@ -1,12 +1,9 @@
 package com.knoban.betterfriends.game;
 
-import com.knoban.betterfriends.requests.JoinGameRequest;
-import com.knoban.betterfriends.requests.RequestCode;
-import com.knoban.betterfriends.requests.RequestFulfillment;
-import com.knoban.betterfriends.requests.UpdateNameRequest;
+import com.knoban.betterfriends.requests.*;
 import com.knoban.betterfriends.server.BFServer;
-import com.knoban.betterfriends.streams.GMLInputStream;
-import com.knoban.betterfriends.streams.GMLOutputStream;
+import com.knoban.gml.streams.GMLInputStream;
+import com.knoban.gml.streams.GMLOutputStream;
 import com.knoban.betterfriends.utils.Tools;
 import javafx.util.Pair;
 
@@ -26,22 +23,22 @@ public class BFPlayer {
     private Socket connection;
     private Thread listener;
     private GMLInputStream in;
-    private GMLOutputStream out;
+    protected GMLOutputStream out;
     private volatile Boolean isClosed;
 
     private Queue<Pair<Byte, RequestFulfillment>> queuedRequests = new LinkedList<Pair<Byte, RequestFulfillment>>();
     private ReadWriteLock queuedRequestsLock = new ReentrantReadWriteLock();
 
-    private UUID uuid;
-    private String name;
+    protected UUID uuid;
+    protected String name;
     protected BFGame game;
-    protected boolean host;
+
+    private byte controlState;
 
     public BFPlayer(BFServer server, Socket connection) {
         this.server = server;
         this.connection = connection;
         this.uuid = UUID.randomUUID();
-        this.host = false;
     }
 
     public UUID getUUID() {
@@ -54,10 +51,6 @@ public class BFPlayer {
 
     public BFGame getGame() {
         return game;
-    }
-
-    public boolean isHost() {
-        return host;
     }
 
     /**
@@ -86,6 +79,7 @@ public class BFPlayer {
                             switch(request) {
                                 case RequestCode.USER_ID:
                                 case RequestCode.CREATE_GAME:
+                                case RequestCode.PROGRESS_GAME:
                                     queuedRequestsLock.writeLock().lock();
                                     queuedRequests.offer(new Pair(request, null));
                                     queuedRequestsLock.writeLock().unlock();
@@ -102,6 +96,13 @@ public class BFPlayer {
                                     JoinGameRequest joinGameRequest = new JoinGameRequest(in.readString());
                                     queuedRequestsLock.writeLock().lock();
                                     queuedRequests.offer(new Pair(request, joinGameRequest));
+                                    queuedRequestsLock.writeLock().unlock();
+                                    break;
+
+                                case RequestCode.CONTROL_STATE:
+                                    ControlStateRequest controlStateRequest = new ControlStateRequest(in.readS8());
+                                    queuedRequestsLock.writeLock().lock();
+                                    queuedRequests.offer(new Pair(request, controlStateRequest));
                                     queuedRequestsLock.writeLock().unlock();
                                     break;
                             }
@@ -128,8 +129,8 @@ public class BFPlayer {
             RequestFulfillment data = request.getValue();
 
             try {
-                BFGame game;
-                String code;
+                BFGame game = null;
+                String code = null;
                 switch(requestCode) {
                     case RequestCode.USER_ID:
                         System.out.println(Tools.formatSocket(connection) + ": USER_ID");
@@ -140,11 +141,12 @@ public class BFPlayer {
                         break;
 
                     case RequestCode.UPDATE_NAME:
-                        System.out.println(Tools.formatSocket(connection) + ": UPDATE_NAME");
                         UpdateNameRequest updateNameRequest = (UpdateNameRequest) data;
                         name = updateNameRequest.getName().trim();
                         if(name.length() > 16)
                             name = name.substring(0, 16);
+
+                        System.out.println(Tools.formatSocket(connection) + ": UPDATE_NAME -> " + name);
 
                         out.writeS16(RequestCode.HANDSHAKE);
                         out.writeS8(requestCode);
@@ -154,34 +156,67 @@ public class BFPlayer {
 
                     case RequestCode.CREATE_GAME:
                         System.out.println(Tools.formatSocket(connection) + ": CREATE_GAME");
-                        game = new BFGame(server, this);
-                        game.open();
+                        if(this.game == null) {
+                            game = new BFGame(server, this);
+                            game.open();
 
-                        code = game.getRoomCode().toString();
-                        out.writeS16(RequestCode.HANDSHAKE);
-                        out.writeS8(requestCode);
-                        out.writeS16((short) (code.length() + 1));
-                        out.writeString(code);
+                            code = game.getRoomCode().toString();
+                            out.writeS16(RequestCode.HANDSHAKE);
+                            out.writeS8(requestCode);
+                            out.writeS16((short) (code.length() + 2));
+                            out.writeS8(BFGame.MAX_PLAYERS);
+                            out.writeString(code);
+                        }
                         break;
 
                     case RequestCode.JOIN_GAME:
                         System.out.println(Tools.formatSocket(connection) + ": JOIN_GAME");
                         JoinGameRequest joinGameRequest = (JoinGameRequest) data;
-                        byte success = 0;
+                        byte statusCode = 0;
                         code = joinGameRequest.getCode();
 
-                        if(code.length() == 4) {
-                            game = server.getGame(new RoomCode(code));
-                            if(game != null) {
-                                success = 1;
-                                game.joinPlayer(this);
+                        if(this.game == null) {
+                            if(code.length() == 4) {
+                                game = server.getGame(new RoomCode(code));
+                                if(game != null) {
+                                    if(game.players.size() < BFGame.MAX_PLAYERS || game.state != GameState.LOBBY) {
+                                        if(game.players.get(name) == null) {
+                                            statusCode = 3;
+                                            game.joinPlayer(this);
+                                        } else
+                                            statusCode = 2;
+                                    } else
+                                        statusCode = 1;
+                                }
                             }
-                        }
 
-                        out.writeS16(RequestCode.HANDSHAKE);
-                        out.writeS8(requestCode);
-                        out.writeS16((short) 1);
-                        out.writeS8(success);
+                            out.writeS16(RequestCode.HANDSHAKE);
+                            out.writeS8(requestCode);
+                            out.writeS16((short) 1);
+                            out.writeS8(statusCode);
+                        }
+                        break;
+
+                    case RequestCode.PROGRESS_GAME:
+                        System.out.println(Tools.formatSocket(connection) + ": PROGRESS_GAME");
+                        if(this.game != null && this.game.host == this) {
+                            this.game.advanceGameState();
+                        }
+                        break;
+
+                    case RequestCode.CONTROL_STATE:
+                        ControlStateRequest controlStateRequest = (ControlStateRequest) data;
+                        controlState = controlStateRequest.getState();
+
+                        System.out.println(Tools.formatSocket(connection) + ": CONTROL_STATE: " + controlState);
+
+                        if(this.game != null && this.game.host != this && this.game.state == GameState.GAME) {
+                            this.game.host.out.writeS16(RequestCode.HANDSHAKE);
+                            this.game.host.out.writeS8(RequestCode.CONTROL_STATE);
+                            this.game.host.out.writeS16((short) (name.length() + 2));
+                            this.game.host.out.writeString(name);
+                            this.game.host.out.writeS8(controlState);
+                        }
                         break;
                 }
             } catch(IOException e) {

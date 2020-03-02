@@ -2,17 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b14c8e11-9d5a-4f92-b0df-97d6ea816f45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/ControlStateRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/RequestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/RequestCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/streams/GMLInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/gml/streams/GMLInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/streams/GMLOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/gml/streams/GMLOutputStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/requests/RequestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/requests/RequestCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/streams/GMLInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/streams/GMLInputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cooperation/Cooperation.yyp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/Cooperation.yyp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.old.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.old.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.old.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.old.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Create_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Create_0.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Draw_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Draw_0.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/obj_game.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_game/obj_game.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_host_button/Mouse_4.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_host_button/Mouse_4.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_join_button/Mouse_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_join_button/Mouse_0.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/options/windows/options_windows.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/options/windows/options_windows.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_title_screen/rm_title_screen.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/rooms/rm_title_screen/rm_title_screen.yy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_create_connection/client_create_connection.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_create_connection/client_create_connection.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_end_connection/client_end_connection.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_end_connection/client_end_connection.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_packet/client_handle_packet.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_packet/client_handle_packet.gml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_response/client_handle_response.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_response/client_handle_response.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_prepare_buffer/client_prepare_buffer.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_prepare_buffer/client_prepare_buffer.gml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_send_request/client_send_request.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/scripts/client_send_request/client_send_request.gml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/1e0fb064-043a-4186-a39d-3723b180c34e.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/views/1e0fb064-043a-4186-a39d-3723b180c34e.yy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cooperation/views/1eb71b9b-98c7-4009-8965-4fb44b3484dd.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/views/1eb71b9b-98c7-4009-8965-4fb44b3484dd.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/294ccefe-d7c0-45fc-95f4-c3b8932b8545.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/views/294ccefe-d7c0-45fc-95f4-c3b8932b8545.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/41eb8851-a392-4cfc-8c33-92d4f5c3e76c.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/views/41eb8851-a392-4cfc-8c33-92d4f5c3e76c.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/b1ff18af-df97-464c-99b0-115eee44a826.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/views/b1ff18af-df97-464c-99b0-115eee44a826.yy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +53,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +89,11 @@
       <workItem from="1582733170372" duration="5999000" />
       <workItem from="1582750186967" duration="3095000" />
       <workItem from="1582755374107" duration="2450000" />
+      <workItem from="1582909976712" duration="10630000" />
+      <workItem from="1582995212339" duration="10622000" />
+      <workItem from="1583165933417" duration="5665000" />
+      <workItem from="1583175324345" duration="813000" />
+      <workItem from="1583181067359" duration="911000" />
     </task>
     <servers />
   </component>
@@ -66,25 +103,46 @@
     </state>
     <state x="487" y="194" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1368.912@0.0.1368.912" timestamp="1582750208431" />
     <state x="683" y="230" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582733211574" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1582758761394">
+    <state x="133" y="383" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583181472686">
+      <screen x="0" y="0" width="1368" height="912" />
+    </state>
+    <state x="133" y="383" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1368.912@0.0.1368.912" timestamp="1583181472686" />
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1583174883457">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582758761394" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1582758761394">
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883457" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1583174883443">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582758761394" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1582758761394">
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883443" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1583174883431">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582758761394" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1582758761394">
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883431" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1583174883452">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582758761394" />
-    <state x="-1264" y="425" key="com.intellij.ide.util.TipDialog" timestamp="1582755374745">
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883452" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state x="467" y="323" key="com.intellij.ide.util.TipDialog" timestamp="1583181068745">
+      <screen x="0" y="0" width="1368" height="912" />
+    </state>
+    <state x="467" y="323" key="com.intellij.ide.util.TipDialog/0.0.1368.912@0.0.1368.912" timestamp="1583181068745" />
+    <state x="656" y="383" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583178603659" />
+    <state x="222" y="0" width="1122" height="948" key="dock-window-1" timestamp="1583000722127">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="222" y="0" width="1122" height="948" key="dock-window-1/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583000722127" />
+    <state x="-1304" y="280" key="run.anything.popup" timestamp="1583003980042">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
-    <state x="-1264" y="425" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582755374745" />
+    <state x="-1304" y="280" key="run.anything.popup/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583003980042" />
+    <state x="-1297" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1582918303616">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1297" y="265" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1582918303616" />
   </component>
 </project>

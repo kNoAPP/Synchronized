@@ -1,1 +1,3 @@
-network_destroy(server);
+with(obj_client) {
+	network_destroy(server);
+}

@@ -1,4 +1,4 @@
-package com.knoban.betterfriends.streams;
+package com.knoban.gml.streams;
 
 import java.io.DataInput;
 import java.io.DataInputStream;
@@ -62,14 +62,14 @@ public class GMLInputStream {
     }
 
     public String readString() throws IOException {
-        byte b = byteBuffer.get();
+        byte b = byteReader.readByte();
         if(b == 0)
             return "";
 
         StringBuilder result = new StringBuilder();
         do {
             result.append((char)b);
-            b = byteBuffer.get();
+            b = byteReader.readByte();
         } while(b != 0);
         return result.toString();
     }
