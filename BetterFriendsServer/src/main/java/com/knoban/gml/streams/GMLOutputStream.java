@@ -7,6 +7,8 @@ import java.nio.ByteOrder;
 /**
  * This class was pulled from:
  * https://github.com/Chukobyte/Java_GML_Server/blob/master/GML_Java_Server/src/com/chukobyte/gmljavaserver/main/GMLOutputStream.java
+ *
+ * It has been modified slightly to improve writeString performance.
  */
 public class GMLOutputStream {
 

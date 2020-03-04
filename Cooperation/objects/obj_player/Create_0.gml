@@ -12,4 +12,4 @@ rotation_speed = 1024;
 index = 0;
 
 image_angle = irandom_range(0, 359);
-depth = -1000;
+depth = -999;

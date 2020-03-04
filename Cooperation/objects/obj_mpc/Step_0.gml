@@ -4,9 +4,9 @@
 var h_votes = 0;
 with(obj_player) {
 	if(control_state & $2)
-		h_votes += role > 0 ? 3 : 1;
+		h_votes += role > 0 ? 2 : 1;
 	if(control_state & $1)
-		h_votes -= role > 0 ? 3 : 1;
+		h_votes -= role > 0 ? 2 : 1;
 }
 
 hsp = (h_votes / players_get_size()) * h_speed;

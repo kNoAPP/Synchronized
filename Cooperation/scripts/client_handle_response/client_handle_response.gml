@@ -95,6 +95,11 @@ with(obj_client) {
 			var name = buffer_read(buffer, buffer_string);
 			var control_state = buffer_read(buffer, buffer_u8);
 			var inst = obj_game.player_name_to_obj[? name];
+			if(inst.control_state & $10 != control_state & $10) {
+				if(control_state & $10)
+					audio_play_sound(snd_sneeze, 1, false);
+			} else
+				audio_play_sound(snd_click, 1, false);
 			inst.control_state = control_state;
 			return true;
 		
