@@ -11,7 +11,7 @@ import java.util.HashSet;
 
 public class BFGame {
 
-    public static final byte MAX_PLAYERS = 8;
+    public static final byte MAX_PLAYERS = 48;
 
     private BFServer server;
     protected BFPlayer host;

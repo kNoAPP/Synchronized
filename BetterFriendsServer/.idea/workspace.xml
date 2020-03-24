@@ -2,19 +2,250 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b14c8e11-9d5a-4f92-b0df-97d6ea816f45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/utils/Pair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/gml/streams/GMLInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/gml/streams/GMLInputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/gml/streams/GMLOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/gml/streams/GMLOutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/Cooperation.yyp" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/Cooperation.yyp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_camera/Create_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_camera/Create_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_camera/Step_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_camera/Step_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_mpc/Create_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_mpc/Create_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player/Create_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_player/Create_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player/Step_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/objects/obj_player/Step_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_host_game/rm_host_game.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/rooms/rm_host_game/rm_host_game.yy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/sprite19/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/sprites/sprite19/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/sprite19/layers/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f/aed55471-8dce-4c93-adba-1452ae6ad1ee.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/sprites/sprite19/layers/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f/aed55471-8dce-4c93-adba-1452ae6ad1ee.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cooperation/views/1eb71b9b-98c7-4009-8965-4fb44b3484dd.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../Cooperation/views/1eb71b9b-98c7-4009-8965-4fb44b3484dd.yy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/Cooperation.yyp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fn_large.old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fn_large.old.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.old.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_large/fnt_large.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_medium/fnt_large1.old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_medium/fnt_large1.old.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_medium/fnt_medium.old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_medium/fnt_medium.old.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_medium/fnt_medium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_medium/fnt_medium.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_small/fnt_medium1.old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_small/fnt_medium1.old.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_small/fnt_small.old.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_small/fnt_small.old.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_small/fnt_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/fonts/fnt_small/fnt_small.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_back_title/Mouse_4.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_back_title/obj_back_title.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_camera/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_camera/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_camera/obj_camera.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_client/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_client/Other_3.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_client/Other_68.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_client/obj_client.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_door/obj_door.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Draw_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Other_4.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_game/obj_game.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_ground/obj_ground.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_hide_role/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_hide_role/Mouse_4.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_hide_role/obj_hide_role.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_host_button/Mouse_4.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_host_button/obj_host_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_join_button/Mouse_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_join_button/obj_join_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_mpc/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_mpc/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_mpc/obj_mpc.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_okay_button/Mouse_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_okay_button/obj_okay_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player/Draw_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player/obj_player.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player_movement/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player_movement/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_player_movement/obj_player_movement.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_role/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_role/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_role/obj_role.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_send_button/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_send_button/Mouse_4.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_send_button/obj_send_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_start_button/Mouse_4.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_start_button/obj_start_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_player_name/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_player_name/Draw_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_player_name/Mouse_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_player_name/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_player_name/obj_text_player_name.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_room_code/Create_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_room_code/Draw_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_room_code/Mouse_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_room_code/Step_0.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_text_room_code/obj_text_room_code.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/objects/obj_title_bubble/obj_title_bubble.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/options/main/inherited/options_main.inherited.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/options/windows/options_windows.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_host_game/rm_host_game.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_host_instructions/rm_host_instructions.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_host_pregame_lobby/rm_host_pregame_lobby.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_host_role_assignment/rm_host_role_assignment.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_player_game/rm_player_game.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_player_instructions/rm_player_instructions.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_player_join_room/rm_player_join_room.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_player_role_assignment/rm_player_role_assignment.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_player_waiting_room/rm_player_waiting_room.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/rooms/rm_title_screen/rm_title_screen.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/check_room_and_name/check_room_and_name.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/check_room_and_name/check_room_and_name.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_create_connection/client_create_connection.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_create_connection/client_create_connection.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_end_connection/client_end_connection.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_end_connection/client_end_connection.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_packet/client_handle_packet.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_packet/client_handle_packet.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_response/client_handle_response.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_handle_response/client_handle_response.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_prepare_buffer/client_prepare_buffer.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_prepare_buffer/client_prepare_buffer.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_send_request/client_send_request.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/client_send_request/client_send_request.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/players_add_player/players_add_player.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/players_add_player/players_add_player.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/players_get_size/players_get_size.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/players_get_size/players_get_size.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/players_remove_player/players_remove_player.gml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/scripts/players_remove_player/players_remove_player.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sounds/snd_click/snd_click" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sounds/snd_click/snd_click.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sounds/snd_sneeze/snd_sneeze" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sounds/snd_sneeze/snd_sneeze.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_back/e6bd1293-5d18-4898-8c1e-d3218d9fca0d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_back/layers/e6bd1293-5d18-4898-8c1e-d3218d9fca0d/fe0ad1d8-44fc-41c5-a21d-4bdba7374fcd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_back/spr_back.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_background/11796b58-0efd-4afb-844c-ab829f1e1ad3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_background/layers/11796b58-0efd-4afb-844c-ab829f1e1ad3/8f0c6a2f-b247-44b2-b5e8-4d3f7f712b31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_background/spr_background.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_door/9ad1be94-b191-4730-94d5-cc2883e40ab0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_door/layers/9ad1be94-b191-4730-94d5-cc2883e40ab0/6b7b901b-cf66-46c4-8b38-a7cb8de496c5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_door/spr_door.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_game_background/f90f0f58-d0ad-4457-9e3a-662eb0c3e506.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_game_background/layers/f90f0f58-d0ad-4457-9e3a-662eb0c3e506/2feffd23-f759-454c-81d9-896b791c987a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_game_background/spr_game_background.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_ground/fae0f26b-e4d4-4846-8119-f5f1a3903a08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_ground/layers/fae0f26b-e4d4-4846-8119-f5f1a3903a08/88efd81c-95a9-42a2-bdff-889f96c8430d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_ground/spr_ground.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_hide_role_button/66814a8c-eb66-47fd-ab9f-bc2e3e411efa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_hide_role_button/99d80ad2-c895-4075-9050-ab1fa5ffb3dd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_hide_role_button/layers/66814a8c-eb66-47fd-ab9f-bc2e3e411efa/0c215bd0-3386-4690-8d88-3ee50d4c50fe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_hide_role_button/layers/99d80ad2-c895-4075-9050-ab1fa5ffb3dd/0c215bd0-3386-4690-8d88-3ee50d4c50fe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_hide_role_button/spr_hide_role_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_button/57d18a2a-8602-4b78-8fe1-a4a71951fb34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_button/layers/57d18a2a-8602-4b78-8fe1-a4a71951fb34/985dc557-419a-4961-8ca0-c347f40f86f8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_button/spr_host_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_instructions_background/dc093270-1839-4156-8e54-2d8d32a930cb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_instructions_background/layers/dc093270-1839-4156-8e54-2d8d32a930cb/7db75aac-9e2f-4641-9eed-bc7d103e9df8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_instructions_background/spr_host_instructions_background.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_roles_background/79a6df31-b0cb-45dd-b689-434527a6c522.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_roles_background/layers/79a6df31-b0cb-45dd-b689-434527a6c522/a4516dd3-79c7-4299-88cb-1e54919b08c1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_host_roles_background/spr_host_roles_background.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_join_button/5ee2c398-ea10-4b0b-8653-90cbecb9de47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_join_button/layers/5ee2c398-ea10-4b0b-8653-90cbecb9de47/4946a4f6-85bd-4b48-ad0d-64cc5be653bd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_join_button/spr_join_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_okay_button/71399c97-2317-4be1-9db4-22dad3372743.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_okay_button/layers/71399c97-2317-4be1-9db4-22dad3372743/574685d7-1ad3-4351-9b55-fbabd14960db.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_okay_button/spr_okay_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_open_slot/5752d9bb-2b95-4b29-aad9-18928a9338ac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_open_slot/layers/5752d9bb-2b95-4b29-aad9-18928a9338ac/9b41bf09-7a9b-4a34-8506-05a0c80b9c74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_open_slot/spr_open_slot.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/0671b667-5485-4d64-b121-71c2092edf8d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/0f5755c5-3f19-4dcf-b794-caf24c605aa6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/12addd2e-d1be-48e2-bbfd-6d2f076018c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/27e09cdb-dedb-40e5-9bd0-7fa180f8f32a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/27f32e4f-aabe-4aea-b1f3-d8c112646f49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/2c6c30ae-9200-4a4d-a5f4-f01883d08bc0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/5647a9da-78f0-4cff-8db7-34432c0333b4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/7e9d8028-6f22-4ba0-aa05-ac86c3fd7f25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/8a4c3f41-bef3-412a-aa9f-4609f9553a85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/9e46679c-930a-42b8-acaf-d5dbda591080.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/9efe5b72-e8e1-4288-847a-90ff76275d3c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/b1e298f0-7d86-4955-92af-bd93e9a5050c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/b81b99ed-7fe4-4c12-bd22-20b4b0ca754e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/cf58d773-179c-4608-8f67-9869d0ef0712.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/d9725e90-a79f-4fd1-8237-f8005256b599.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/f76567f2-f812-4180-990e-729dc64e172d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/0671b667-5485-4d64-b121-71c2092edf8d/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/0f5755c5-3f19-4dcf-b794-caf24c605aa6/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/12addd2e-d1be-48e2-bbfd-6d2f076018c8/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/27e09cdb-dedb-40e5-9bd0-7fa180f8f32a/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/27f32e4f-aabe-4aea-b1f3-d8c112646f49/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/2c6c30ae-9200-4a4d-a5f4-f01883d08bc0/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/5647a9da-78f0-4cff-8db7-34432c0333b4/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/7e9d8028-6f22-4ba0-aa05-ac86c3fd7f25/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/8a4c3f41-bef3-412a-aa9f-4609f9553a85/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/9e46679c-930a-42b8-acaf-d5dbda591080/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/9efe5b72-e8e1-4288-847a-90ff76275d3c/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/b1e298f0-7d86-4955-92af-bd93e9a5050c/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/b81b99ed-7fe4-4c12-bd22-20b4b0ca754e/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/cf58d773-179c-4608-8f67-9869d0ef0712/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/d9725e90-a79f-4fd1-8237-f8005256b599/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/layers/f76567f2-f812-4180-990e-729dc64e172d/4b45d4bc-5095-465b-bdf4-e890fcbd39c8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player/spr_player.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_game_background/3c323f1a-218d-4c4a-af4b-493e0f7a5de6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_game_background/layers/3c323f1a-218d-4c4a-af4b-493e0f7a5de6/34d8e361-8599-4c19-9d75-ab93961b8a4c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_game_background/spr_player_game_background.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_role_negative/ff4c0dca-5253-4bd4-a4c4-63bd5845d9aa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_role_negative/layers/ff4c0dca-5253-4bd4-a4c4-63bd5845d9aa/c505446b-e147-48d0-a3bc-b70f55e806f6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_role_negative/spr_player_role_negative.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_role_positive/fb59fbbd-2a7c-428b-82c4-2589ae692177.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_role_positive/layers/fb59fbbd-2a7c-428b-82c4-2589ae692177/917bb84b-ce39-4207-8933-29f8d30b13b9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_player_role_positive/spr_player_role_positive.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_send_button/57a66c95-dd0e-4430-95de-2f1fa19a2ce6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_send_button/cea5a3fd-0a25-4632-afb3-cc1564d2bf0a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_send_button/layers/57a66c95-dd0e-4430-95de-2f1fa19a2ce6/baa3e6e1-7919-479c-9d5e-45ecc54ddd39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_send_button/layers/cea5a3fd-0a25-4632-afb3-cc1564d2bf0a/baa3e6e1-7919-479c-9d5e-45ecc54ddd39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_send_button/spr_send_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_start_button/02d8a33e-bd7a-4115-8e36-32795d14250b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_start_button/layers/02d8a33e-bd7a-4115-8e36-32795d14250b/291f6a7b-d6a0-485a-9ccc-a88b51a6ac0d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_start_button/spr_start_button.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_text_box/55cdb5e4-6347-4c3a-8ca1-29cb20d939fc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_text_box/d11819db-6560-49ee-82b5-13dc48cc124d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_text_box/e76b1a29-6fae-45da-a0c0-7f3ec64a8be0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_text_box/layers/55cdb5e4-6347-4c3a-8ca1-29cb20d939fc/9545a13b-ab52-463f-8727-137e1011ccf3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_text_box/layers/d11819db-6560-49ee-82b5-13dc48cc124d/9545a13b-ab52-463f-8727-137e1011ccf3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_text_box/layers/e76b1a29-6fae-45da-a0c0-7f3ec64a8be0/9545a13b-ab52-463f-8727-137e1011ccf3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_text_box/spr_text_box.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_title_bubble/c7529769-575b-49d4-8d38-ceefbdebd41e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_title_bubble/layers/c7529769-575b-49d4-8d38-ceefbdebd41e/041f2301-fe07-4bb2-9b95-e8e6792b5bc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_title_bubble/spr_title_bubble.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_waiting_room_background/0ecda3bb-c8fe-4f6b-bf41-da4db76befeb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_waiting_room_background/layers/0ecda3bb-c8fe-4f6b-bf41-da4db76befeb/578a1b29-44bd-4ceb-9228-8ed1b1a3453a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/spr_waiting_room_background/spr_waiting_room_background.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/sprite19/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/sprite19/layers/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f/aed55471-8dce-4c93-adba-1452ae6ad1ee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/sprites/sprite19/sprite19.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/03bcc99e-e3bd-4917-ad3f-45bf9102b03f.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/1da5c759-2ab8-4ed3-9afd-b3420e31bf8e.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/1e0fb064-043a-4186-a39d-3723b180c34e.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/1eb71b9b-98c7-4009-8965-4fb44b3484dd.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/2806373c-0ec9-4f44-892f-68924260e857.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/294ccefe-d7c0-45fc-95f4-c3b8932b8545.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/2eb1143e-f7b7-4ade-b23b-18cf311c37dd.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/41eb8851-a392-4cfc-8c33-92d4f5c3e76c.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/433e1686-ec0d-4734-a744-84dcb77a41e9.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/5639773c-901b-4785-be58-7990087059ab.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/5a1b72f1-d0e4-4e7f-856a-8cf466383869.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/6961343b-df71-4548-a072-b566f61ce946.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/7902cadc-e356-4387-832f-b1a2d56aaebd.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/9376c4c2-c313-4a5b-91c6-22abcc465bf8.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/b1ff18af-df97-464c-99b0-115eee44a826.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/b8ff93e9-df0f-4465-857c-946f67c66bb4.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/dfdbc01b-fbee-4ed1-b28e-3503f62db018.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/ebf30764-caed-4661-910a-48a80e97a12d.yy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Cooperation/views/f64891f0-c471-4ae8-aacf-cf60b3bd3b73.yy" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,52 +299,70 @@
       <workItem from="1583191903387" duration="637000" />
       <workItem from="1583203368384" duration="659000" />
       <workItem from="1583281679862" duration="137000" />
+      <workItem from="1583358881333" duration="320000" />
+      <workItem from="1583370996218" duration="1376000" />
+      <workItem from="1583503177885" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="487" y="194" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1582750208431">
-      <screen x="0" y="0" width="1368" height="912" />
+    <state x="684" y="230" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1585069402072">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="487" y="194" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1368.912@0.0.1368.912" timestamp="1582750208431" />
     <state x="683" y="230" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582733211574" />
+    <state x="684" y="230" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585069402072" />
     <state x="133" y="383" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1583181472686">
       <screen x="0" y="0" width="1368" height="912" />
     </state>
     <state x="133" y="383" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1368.912@0.0.1368.912" timestamp="1583181472686" />
-    <state x="-1180" y="356" key="FileChooserDialogImpl" timestamp="1583281801665">
-      <screen x="-1920" y="0" width="1920" height="1200" />
-    </state>
-    <state x="-1180" y="356" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583281801665" />
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1583174883457">
-      <screen x="-1920" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883457" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1583174883443">
-      <screen x="-1920" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883443" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1583174883431">
-      <screen x="-1920" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883431" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1583174883452">
-      <screen x="-1920" y="0" width="1920" height="1200" />
-    </state>
-    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583174883452" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state x="656" y="383" key="com.intellij.ide.util.TipDialog" timestamp="1583281680169">
+    <state x="444" y="134" key="CommitChangelistDialog2" timestamp="1585078490211">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="467" y="323" key="com.intellij.ide.util.TipDialog/0.0.1368.912@0.0.1368.912" timestamp="1583181068745" />
-    <state x="656" y="383" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583281680169" />
+    <state x="444" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585078490211" />
+    <state x="527" y="271" key="FileChooserDialogImpl" timestamp="1583503204867">
+      <screen x="0" y="0" width="1368" height="912" />
+    </state>
+    <state x="527" y="271" key="FileChooserDialogImpl/0.0.1368.912@0.0.1368.912" timestamp="1583503204867" />
+    <state x="-1180" y="356" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583281801665" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1585078799760">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585078799760" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1585078799760">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585078799760" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1585078799760">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585078799760" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1585078799760">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585078799760" />
+    <state x="655" y="383" key="com.intellij.ide.util.TipDialog" timestamp="1585078305643">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="467" y="323" key="com.intellij.ide.util.TipDialog/0.0.1368.912@0.0.1368.912" timestamp="1583503178256" />
+    <state x="656" y="383" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583370996583" />
+    <state x="655" y="383" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585078305643" />
     <state x="222" y="0" width="1122" height="948" key="dock-window-1" timestamp="1583000722127">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="222" y="0" width="1122" height="948" key="dock-window-1/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583000722127" />
+    <state x="647" y="331" key="git4idea.merge.GitPullDialog" timestamp="1585078362376">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="647" y="331" key="git4idea.merge.GitPullDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585078362376" />
     <state x="-1578" y="296" key="new project wizard" timestamp="1583281704503">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>

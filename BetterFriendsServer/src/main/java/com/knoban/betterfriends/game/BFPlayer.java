@@ -2,10 +2,10 @@ package com.knoban.betterfriends.game;
 
 import com.knoban.betterfriends.requests.*;
 import com.knoban.betterfriends.server.BFServer;
+import com.knoban.betterfriends.utils.Pair;
 import com.knoban.gml.streams.GMLInputStream;
 import com.knoban.gml.streams.GMLOutputStream;
 import com.knoban.betterfriends.utils.Tools;
-import javafx.util.Pair;
 
 import java.io.EOFException;
 import java.io.IOException;

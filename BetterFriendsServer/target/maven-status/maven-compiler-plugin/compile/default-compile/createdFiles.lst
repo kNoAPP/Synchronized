@@ -12,4 +12,5 @@ com\knoban\betterfriends\requests\ControlStateRequest.class
 com\knoban\betterfriends\Main.class
 com\knoban\betterfriends\game\BFRole.class
 com\knoban\betterfriends\requests\UpdateNameRequest.class
+com\knoban\betterfriends\utils\Pair.class
 com\knoban\gml\streams\GMLInputStream.class
