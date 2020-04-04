@@ -1,4 +1,5 @@
 com\knoban\betterfriends\requests\RequestCode.class
+com\knoban\betterfriends\requests\ProgressGameRequest.class
 com\knoban\betterfriends\utils\Tools.class
 com\knoban\betterfriends\requests\JoinGameRequest.class
 com\knoban\betterfriends\game\BFPlayer.class

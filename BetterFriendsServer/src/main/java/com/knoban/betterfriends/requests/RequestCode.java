@@ -9,6 +9,7 @@ public class RequestCode {
     public static final byte JOIN_GAME = 4;
     public static final byte PROGRESS_GAME = 8;
     public static final byte CONTROL_STATE = 10;
+    public static final byte QUIT_GAME = 11;
 
     public static final byte HOST_ADD_PLAYER = 5;
     public static final byte HOST_REMOVE_PLAYER = 6;

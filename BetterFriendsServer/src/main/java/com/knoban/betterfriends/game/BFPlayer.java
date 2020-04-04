@@ -79,7 +79,7 @@ public class BFPlayer {
                             switch(request) {
                                 case RequestCode.USER_ID:
                                 case RequestCode.CREATE_GAME:
-                                case RequestCode.PROGRESS_GAME:
+                                case RequestCode.QUIT_GAME:
                                     queuedRequestsLock.writeLock().lock();
                                     queuedRequests.offer(new Pair(request, null));
                                     queuedRequestsLock.writeLock().unlock();
@@ -96,6 +96,13 @@ public class BFPlayer {
                                     JoinGameRequest joinGameRequest = new JoinGameRequest(in.readString());
                                     queuedRequestsLock.writeLock().lock();
                                     queuedRequests.offer(new Pair(request, joinGameRequest));
+                                    queuedRequestsLock.writeLock().unlock();
+                                    break;
+
+                                case RequestCode.PROGRESS_GAME:
+                                    ProgressGameRequest progressGameRequest = new ProgressGameRequest(in.readS8());
+                                    queuedRequestsLock.writeLock().lock();
+                                    queuedRequests.offer(new Pair(request, progressGameRequest));
                                     queuedRequestsLock.writeLock().unlock();
                                     break;
 
@@ -156,17 +163,19 @@ public class BFPlayer {
 
                     case RequestCode.CREATE_GAME:
                         System.out.println(Tools.formatSocket(connection) + ": CREATE_GAME");
-                        if(this.game == null) {
-                            game = new BFGame(server, this);
-                            game.open();
 
-                            code = game.getRoomCode().toString();
-                            out.writeS16(RequestCode.HANDSHAKE);
-                            out.writeS8(requestCode);
-                            out.writeS16((short) (code.length() + 2));
-                            out.writeS8(BFGame.MAX_PLAYERS);
-                            out.writeString(code);
-                        }
+                        if(this.game != null)
+                            this.game.quitPlayer(this);
+
+                        game = new BFGame(server, this);
+                        game.open();
+
+                        code = game.getRoomCode().toString();
+                        out.writeS16(RequestCode.HANDSHAKE);
+                        out.writeS8(requestCode);
+                        out.writeS16((short) (code.length() + 2));
+                        out.writeS8(BFGame.MAX_PLAYERS);
+                        out.writeString(code);
                         break;
 
                     case RequestCode.JOIN_GAME:
@@ -175,19 +184,20 @@ public class BFPlayer {
                         byte statusCode = 0;
                         code = joinGameRequest.getCode();
 
-                        if(this.game == null) {
-                            if(code.length() == 4) {
-                                game = server.getGame(new RoomCode(code));
-                                if(game != null) {
-                                    if(game.players.size() < BFGame.MAX_PLAYERS || game.state != GameState.LOBBY) {
-                                        if(game.players.get(name) == null) {
-                                            statusCode = 3;
-                                            game.joinPlayer(this);
-                                        } else
-                                            statusCode = 2;
+                        if(this.game != null)
+                            this.game.quitPlayer(this);
+
+                        if(code.length() == 4) {
+                            game = server.getGame(new RoomCode(code));
+                            if(game != null) {
+                                if(game.players.size() < BFGame.MAX_PLAYERS || game.state != GameState.LOBBY) {
+                                    if(game.players.get(name) == null) {
+                                        statusCode = 3;
+                                        game.joinPlayer(this);
                                     } else
-                                        statusCode = 1;
-                                }
+                                        statusCode = 2;
+                                } else
+                                    statusCode = 1;
                             }
 
                             out.writeS16(RequestCode.HANDSHAKE);
@@ -198,9 +208,10 @@ public class BFPlayer {
                         break;
 
                     case RequestCode.PROGRESS_GAME:
-                        System.out.println(Tools.formatSocket(connection) + ": PROGRESS_GAME");
+                        ProgressGameRequest progressGameRequest = (ProgressGameRequest) data;
+                        System.out.println(Tools.formatSocket(connection) + ": PROGRESS_GAME: " + progressGameRequest.getTo());
                         if(this.game != null && this.game.host == this) {
-                            this.game.advanceGameState();
+                            this.game.advanceGameState(progressGameRequest.getTo());
                         }
                         break;
 
@@ -216,6 +227,13 @@ public class BFPlayer {
                             this.game.host.out.writeS16((short) (name.length() + 2));
                             this.game.host.out.writeString(name);
                             this.game.host.out.writeS8(controlState);
+                        }
+                        break;
+
+                    case RequestCode.QUIT_GAME:
+                        System.out.println(Tools.formatSocket(connection) + ": QUIT_GAME");
+                        if(this.game != null) {
+                            this.game.quitPlayer(this);
                         }
                         break;
                 }

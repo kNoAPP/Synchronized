@@ -1,4 +1,7 @@
 with(obj_client) {
+	// MISC
+	room_update = 0;
+	
 	// DEFINE MESSAGE IDs
 	MSG_HANDSHAKE = 420;
 	MSG_USER_ID = 1;
@@ -7,6 +10,7 @@ with(obj_client) {
 	MSG_JOIN_GAME = 4;
 	MSG_PROGRESS_GAME = 8;
 	MSG_CONTROL_STATE = 10;
+	MSG_QUIT_GAME = 11;
 
 	MSG_HOST_ADD_PLAYER = 5;
 	MSG_HOST_REMOVE_PLAYER = 6;

@@ -41,7 +41,7 @@ with(obj_client) {
 			
 				case 3:
 					// show_message("You're in! Waiting for host...");
-					room_goto(rm_player_waiting_room);
+					room_goto(rm_player_waiting);
 					break;
 			}
 			obj_send_button.image_index = 0;
@@ -58,14 +58,19 @@ with(obj_client) {
 			return true;
 		
 		case MSG_PLAYER_GAME_ENDED:
-			show_message("The host has left, restarting...");
-			room_goto(rm_title_screen);
+			if(room != rm_title_screen) {
+				room_goto(rm_title_screen);
+			}
 			return true;
 			
 		case MSG_PROGRESS_GAME:
 			show_debug_message("Progressing room... ");
 			var state = buffer_read(buffer, buffer_u8);
 			switch(state) {
+				case 0:
+					room_goto(rm_player_waiting);
+					break;
+					
 				case 1:
 					room_goto(rm_player_instructions);	
 					break;
@@ -76,6 +81,10 @@ with(obj_client) {
 					
 				case 3:
 					room_goto(rm_player_game);
+					break;
+					
+				case 4:
+					room_goto(rm_player_waiting);
 					break;
 			}
 			return true;

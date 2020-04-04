@@ -36,7 +36,30 @@ with(obj_client) {
 			
 		case MSG_PROGRESS_GAME:
 			show_debug_message("Sent Progress Game");
-			client_prepare_buffer(buffer, request, 0);
+			client_prepare_buffer(buffer, request, 1);
+			switch(room_update) {
+				case rm_host_pregame_lobby:
+					buffer_write(buffer, buffer_u8, 0);
+					break;
+					
+				case rm_host_instructions:
+					buffer_write(buffer, buffer_u8, 1);
+					break;
+					
+				case rm_host_role_assignment:
+					buffer_write(buffer, buffer_u8, 2);
+					break;
+					
+				case rm_host_game:
+					buffer_write(buffer, buffer_u8, 3);
+					break;
+					
+				case rm_host_neg_win:
+				case rm_host_pos_win:
+					buffer_write(buffer, buffer_u8, 4);
+					break;
+			}
+			room_goto(room_update);
 	        network_send_packet(socket, buffer, buffer_tell(buffer));
 			break;
 			
@@ -45,6 +68,12 @@ with(obj_client) {
 			client_prepare_buffer(buffer, request, 1);
 			buffer_write(buffer, buffer_u8, obj_player_movement.control_state);
 	        network_send_packet(socket, buffer, buffer_tell(buffer));
+			break;
+			
+		case MSG_QUIT_GAME:
+			show_debug_message("Sent Quit Game");
+			client_prepare_buffer(buffer, request, 0);
+			network_send_packet(socket, buffer, buffer_tell(buffer));
 			break;
 
 	    default:

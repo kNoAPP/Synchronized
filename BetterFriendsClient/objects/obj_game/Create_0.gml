@@ -22,3 +22,4 @@ ROLE_NEGATIVE = 1;
 this_name = "";
 role = -1;
 
+randomize();

@@ -21,13 +21,11 @@ public class BFGame {
     protected ArrayList<HashSet<BFPlayer>> roles = new ArrayList<HashSet<BFPlayer>>();
 
     protected byte state;
-    protected byte round;
 
     public BFGame(BFServer server, BFPlayer host) {
         this.server = server;
         this.host = host;
         this.state = GameState.LOBBY;
-        this.round = 0;
         host.game = this;
 
         // Two roles
@@ -49,14 +47,35 @@ public class BFGame {
     }
 
     public void close() {
-        players.values().stream().forEach((p) -> p.game = null);
-        players.clear();
-        server.removeGame(roomCode);
+        players.values().forEach((p) -> {
+            try {
+                p.out.writeS16(RequestCode.HANDSHAKE);
+                p.out.writeS8(RequestCode.PLAYER_GAME_ENDED);
+                p.out.writeS16((short) 0);
+            } catch(IOException e) {
+                System.out.println("Failed to alert a player of a closed game.");
+            }
 
-        System.out.println("Closed game [" + roomCode + "] with host: " + host.getUUID());
+            p.game = null;
+        });
+        players.clear();
+
+    System.out.println("Closed game [" + roomCode + "] with host: " + host.getUUID());
+
+        try {
+            host.out.writeS16(RequestCode.HANDSHAKE);
+            host.out.writeS8(RequestCode.PLAYER_GAME_ENDED);
+            host.out.writeS16((short) 0);
+        } catch(IOException e) {
+            // No debug needed here. It's very common that the host can't be contacted at this point.
+        }
+
+        host.game = null;
+        host = null;
+        server.removeGame(roomCode);
     }
 
-    public void joinPlayer(BFPlayer player) {
+    protected void joinPlayer(BFPlayer player) {
         players.put(player.name, player);
         player.game = this;
 
@@ -70,21 +89,12 @@ public class BFGame {
         }
     }
 
-    public void quitPlayer(BFPlayer player) {
+    protected void quitPlayer(BFPlayer player) {
+        player.game = null;
         if(player.equals(host)) {
-            players.values().stream().forEach((p) -> {
-                try {
-                    p.out.writeS16(RequestCode.HANDSHAKE);
-                    p.out.writeS8(RequestCode.PLAYER_GAME_ENDED);
-                    p.out.writeS16((short) 0);
-                } catch(IOException e) {
-                    System.out.println("Failed to alert a player of a quitting host!");
-                }
-            });
             close();
         } else {
             players.remove(player.getName());
-            player.game = null;
 
             try {
                 host.out.writeS16(RequestCode.HANDSHAKE);
@@ -113,32 +123,33 @@ public class BFGame {
         return state;
     }
 
-    public void advanceGameState() {
-        switch(state) {
+    public void advanceGameState(byte to) {
+        switch(to) {
             case GameState.LOBBY:
-                state = GameState.INSTRUCTIONS;
+            case GameState.INSTRUCTIONS:
+            case GameState.GAME:
+            case GameState.WINNERS:
                 players.values().stream().forEach((p) -> {
                     try {
                         p.out.writeS16(RequestCode.HANDSHAKE);
                         p.out.writeS8(RequestCode.PROGRESS_GAME);
                         p.out.writeS16((short) 1);
-                        p.out.writeS8(state);
+                        p.out.writeS8(to);
                     } catch(IOException e) {
-                        System.out.println("Failed to alert a player in a LOBBY game state!");
+                        System.out.println("Failed to alert a player in a game state!");
                     }
                 });
                 break;
 
-            case GameState.INSTRUCTIONS:
-                state = GameState.ROLE_ASSIGNMENT;
+            case GameState.ROLE_ASSIGNMENT:
                 players.values().stream().forEach((p) -> {
                     try {
                         p.out.writeS16(RequestCode.HANDSHAKE);
                         p.out.writeS8(RequestCode.PROGRESS_GAME);
                         p.out.writeS16((short) 1);
-                        p.out.writeS8(state);
+                        p.out.writeS8(to);
                     } catch(IOException e) {
-                        System.out.println("Failed to alert a player in an INSTRUCTIONS game state!");
+                        System.out.println("Failed to alert a player in a game state!");
                     }
                 });
 
@@ -172,33 +183,9 @@ public class BFGame {
                 }
                 break;
 
-            case GameState.ROLE_ASSIGNMENT:
-                state = GameState.GAME;
-                players.values().stream().forEach((p) -> {
-                    try {
-                        p.out.writeS16(RequestCode.HANDSHAKE);
-                        p.out.writeS8(RequestCode.PROGRESS_GAME);
-                        p.out.writeS16((short) 1);
-                        p.out.writeS8(state);
-                    } catch(IOException e) {
-                        System.out.println("Failed to alert a player in a ROLE_ASSIGNMENT game state!");
-                    }
-                });
-                break;
-
-            case GameState.GAME:
-                break;
-
-            case GameState.VOTING:
-                break;
-
-            case GameState.SCORES:
-                break;
         }
-    }
 
-    public byte getRound() {
-        return round;
+        this.state = to;
     }
 
     @Override

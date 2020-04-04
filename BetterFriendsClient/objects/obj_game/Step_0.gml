@@ -3,7 +3,7 @@
 step += 1;
 
 if(host && room != rm_host_pregame_lobby && players_get_size() <= 0) {
-	// Tell server host quit and goto title_screen;
-	game_restart();
-	//room_goto(rm_title_screen);
+	obj_client.room_update = rm_host_pregame_lobby;
+	client_send_request(obj_client.server, obj_client.buffer, obj_client.MSG_PROGRESS_GAME);
+	show_message("You don't have enough players!");
 }
