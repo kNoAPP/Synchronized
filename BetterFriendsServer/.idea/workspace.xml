@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b14c8e11-9d5a-4f92-b0df-97d6ea816f45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/ProgressGameRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/BetterFriendsClient.yyp" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/BetterFriendsClient.yyp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_back_title/Mouse_4.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_back_title/Mouse_4.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_door/obj_door.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_door/obj_door.yy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_game/Step_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_game/Step_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_join_button/Mouse_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_join_button/Mouse_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_okay_button/Mouse_0.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_okay_button/Mouse_0.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_start_button/Mouse_4.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/objects/obj_start_button/Mouse_4.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/rooms/rm_host_game/rm_host_game.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/rooms/rm_host_game/rm_host_game.yy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/rooms/rm_host_pregame_lobby/rm_host_pregame_lobby.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/rooms/rm_host_pregame_lobby/rm_host_pregame_lobby.yy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/rooms/rm_player_join_room/rm_player_join_room.yy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/rooms/rm_player_waiting_room/rm_player_waiting_room.yy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/scripts/client_create_connection/client_create_connection.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/scripts/client_create_connection/client_create_connection.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/scripts/client_handle_response/client_handle_response.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/scripts/client_handle_response/client_handle_response.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/scripts/client_send_request/client_send_request.gml" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/scripts/client_send_request/client_send_request.gml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/sprites/sprite19/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/sprites/sprite19/layers/d17d9d3c-ced9-4ed0-b888-d2afd834fe8f/aed55471-8dce-4c93-adba-1452ae6ad1ee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/sprites/sprite19/sprite19.yy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/views/1eb71b9b-98c7-4009-8965-4fb44b3484dd.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/views/1eb71b9b-98c7-4009-8965-4fb44b3484dd.yy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/views/294ccefe-d7c0-45fc-95f4-c3b8932b8545.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/views/294ccefe-d7c0-45fc-95f4-c3b8932b8545.yy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BetterFriendsClient/views/41eb8851-a392-4cfc-8c33-92d4f5c3e76c.yy" beforeDir="false" afterPath="$PROJECT_DIR$/../BetterFriendsClient/views/41eb8851-a392-4cfc-8c33-92d4f5c3e76c.yy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/BFPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/game/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/RequestCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/knoban/betterfriends/requests/RequestCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0-shaded.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BetterFriendsServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/BFPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/game/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/requests/RequestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/knoban/betterfriends/requests/RequestCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-BetterFriendsServer.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +32,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Plugins2x/Ultimates" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -112,42 +77,42 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="444" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1585078490211" />
-    <state x="740" y="321" key="FileChooserDialogImpl" timestamp="1585583705380">
+    <state x="740" y="321" key="FileChooserDialogImpl" timestamp="1586042766290">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="527" y="271" key="FileChooserDialogImpl/0.0.1368.912@0.0.1368.912" timestamp="1583503204867" />
     <state x="-1180" y="356" key="FileChooserDialogImpl/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583281801665" />
-    <state x="740" y="321" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1585583705380" />
-    <state width="1877" height="118" key="GridCell.Tab.0.bottom" timestamp="1585525198425">
+    <state x="740" y="321" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1586042766290" />
+    <state width="1877" height="118" key="GridCell.Tab.0.bottom" timestamp="1586033646916">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
     <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state width="1877" height="118" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1585525198425" />
-    <state width="1877" height="118" key="GridCell.Tab.0.center" timestamp="1585525198425">
+    <state width="1877" height="118" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586033646916" />
+    <state width="1877" height="118" key="GridCell.Tab.0.center" timestamp="1586033646916">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
     <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state width="1877" height="118" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1585525198425" />
-    <state width="1877" height="118" key="GridCell.Tab.0.left" timestamp="1585525198425">
+    <state width="1877" height="118" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586033646916" />
+    <state width="1877" height="118" key="GridCell.Tab.0.left" timestamp="1586033646916">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
     <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state width="1877" height="118" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1585525198425" />
-    <state width="1877" height="118" key="GridCell.Tab.0.right" timestamp="1585525198425">
+    <state width="1877" height="118" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586033646916" />
+    <state width="1877" height="118" key="GridCell.Tab.0.right" timestamp="1586033646916">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583382321062" />
     <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1200@0.0.1920.1080" timestamp="1582940274048" />
-    <state width="1877" height="118" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1585525198425" />
-    <state x="655" y="383" key="com.intellij.ide.util.TipDialog" timestamp="1585583690795">
+    <state width="1877" height="118" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586033646916" />
+    <state x="655" y="383" key="com.intellij.ide.util.TipDialog" timestamp="1586042753101">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="467" y="323" key="com.intellij.ide.util.TipDialog/0.0.1368.912@0.0.1368.912" timestamp="1583503178256" />
     <state x="656" y="383" key="com.intellij.ide.util.TipDialog/0.0.1920.1080/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1583370996583" />
-    <state x="655" y="383" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1585583690795" />
+    <state x="655" y="383" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1586042753101" />
     <state x="222" y="0" width="1122" height="948" key="dock-window-1" timestamp="1583000722127">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

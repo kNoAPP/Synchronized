@@ -28,8 +28,8 @@ with(obj_client) {
 
 	server = network_create_socket(network_socket_tcp);
 	network_set_timeout(server, 5000, 5000);
-	// var result = network_connect_raw(server, "127.0.0.1", 25500);
-	var result = network_connect_raw(server, "149.56.131.81", 25500);
+	var result = network_connect_raw(server, "127.0.0.1", 25500);
+	// var result = network_connect_raw(server, "149.56.131.81", 25500);
 	if(result >= 0) {
 	    buffer = buffer_create(256, buffer_grow, 1);
 	    show_debug_message("Connected to server successfully.");
